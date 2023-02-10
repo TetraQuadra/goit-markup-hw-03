@@ -32,7 +32,7 @@ ul {
 }
 
 .container {
-  margin: 0;
+  margin: auto;
   width: 1440px;
 }
 
@@ -56,10 +56,6 @@ ul {
   font-size: 20px;
   line-height: 1.2;
   color: var(--headings-color);
-}
-
-.footer {
-  background-color: var(--hero-background-color);
 }
 
 .logo {
@@ -197,6 +193,15 @@ ul {
   display: flex;
   padding-bottom: 120px;
 }
+.projects-list-img {
+  background: linear-gradient(
+      0deg,
+      rgba(77, 90, 229, 0.1),
+      rgba(77, 90, 229, 0.1)
+    ),
+    url(2368.jpg);
+  background-blend-mode: soft-light, normal;
+}
 
 .projects-list-item {
   margin-right: 24px;
@@ -214,18 +219,26 @@ ul {
   margin-top: 72px;
   display: flex;
   padding-bottom: 120px;
-  background: inherit;
-}
-.section-team {
 }
 
-.team-list {
-  background-color: var(--bright-background-color);
-}
 .team-list-item {
   margin-right: 24px;
 }
 .team-list-card {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+  background-color: white;
+}
+
+.team-list-card .minor-title {
+  margin-top: 32px;
+  text-align: center;
+}
+.team-member-occupation {
+  margin-top: 8px;
+  text-align: center;
+  padding-bottom: 32px;
 }
 
 .filter-buttons-list button {
@@ -249,7 +262,25 @@ ul {
   background-color: var(--active-state-color);
   color: var(--bright-background-color);
 }
+.footer-container {
+  padding: 100px 156px;
+  background-color: var(--hero-background-color);
+}
+.footer-logo {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 1.333;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--headings-color);
+  margin-bottom: 16px;
+  text-decoration: none;
+  display: block;
+}
 
 .footer-motto {
   color: var(--accent-color);
+  display: block;
+  width: 264px;
 }
