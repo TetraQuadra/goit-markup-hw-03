@@ -211,14 +211,13 @@ img {
 }
 
 .team-container {
-  padding: 120px 156px 0 156px;
+  padding: 120px 156px;
   background-color: var(--light-accent-color);
 }
 .team-list {
   list-style-type: none;
   margin-top: 72px;
   display: flex;
-  padding-bottom: 120px;
 }
 
 .team-list-item {
