@@ -31,6 +31,12 @@ ul {
   padding: 0;
 }
 
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
 .container {
   margin: auto;
   width: 1440px;
@@ -104,8 +110,7 @@ ul {
   color: var(--active-state-color);
 }
 
-.navigation-list,
-.filter-buttons-list {
+.navigation-list {
   list-style-type: none;
 }
 .contacts-list {
@@ -169,7 +174,9 @@ ul {
 .hero-button:active {
   background: var(--active-state-color);
 }
-
+.features-title {
+  margin-bottom: 8px;
+}
 .features-container {
   padding: 120px 156px;
 }
@@ -193,18 +200,11 @@ ul {
   display: flex;
   padding-bottom: 120px;
 }
-.projects-list-img {
-  background: linear-gradient(
-      0deg,
-      rgba(77, 90, 229, 0.1),
-      rgba(77, 90, 229, 0.1)
-    ),
-    url(2368.jpg);
-  background-blend-mode: soft-light, normal;
-}
 
 .projects-list-item {
   margin-right: 24px;
+  font-size: 0;
+  width: calc((1440px - (156px * 2) - (24px * 2)) / 3);
 }
 .projects-list-item:last-child {
   margin: 0;
@@ -224,11 +224,21 @@ ul {
 .team-list-item {
   margin-right: 24px;
 }
+
+.team-list-item:last-child {
+  margin-right: 0px;
+}
 .team-list-card {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
   background-color: white;
+  flex-basis: calc((1440px - (156px * 2) - (24px * 2)) / 3);
+}
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
 }
 
 .team-list-card .minor-title {
@@ -241,7 +251,7 @@ ul {
   padding-bottom: 32px;
 }
 
-.filter-buttons-list button {
+.filter-button {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -254,14 +264,62 @@ ul {
   box-shadow: 0px 4px 4px var(--box-shadow-color);
   border-radius: 4px;
   border: 1px solid var(--accent-color);
+  padding: 12px 24px;
+}
+.filter-buttons-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+.filter-buttons-list-item {
+  margin-right: 24px;
 }
 
-.filter-buttons-list button:hover,
-.filter-buttons-list button:focus,
-.filter-buttons-list button:active {
+.filter-buttons-list-item:last-child {
+  margin-right: 0;
+}
+
+.filter-button:hover,
+.filter-button:focus,
+.filter-button:active {
   background-color: var(--active-state-color);
   color: var(--bright-background-color);
 }
+
+.portfolio-projects-container {
+  padding: 96px 156px 120px 156px;
+}
+.portfolio-projects-list {
+  list-style-type: none;
+  margin-top: 72px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-projects-item {
+  margin-right: 24px;
+  margin-bottom: 48px;
+}
+
+.portfolio-projects-item:nth-child(3n + 3) {
+  margin-right: 0;
+}
+
+.portfolio-projects-item:nth-child(n + 7) {
+  margin-bottom: 0;
+}
+.portfolio-project-card {
+  border: 1px solid var(--accent-color);
+  width: calc((1440px - 156px * 2 - 24px * 2) / 3);
+}
+.project-name-title {
+  margin: 32px 0 8px 0;
+  padding-left: 16px;
+}
+.project-description {
+  padding: 0 0 32px 16px;
+}
+
 .footer-container {
   padding: 100px 156px;
   background-color: var(--hero-background-color);
