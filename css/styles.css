@@ -260,7 +260,7 @@ img {
   color: var(--primary-brand-color);
   background: var(--light-accent-color);
   cursor: pointer;
-  box-shadow: 0px 4px 4px var(--box-shadow-color);
+
   border-radius: 4px;
   border: 1px solid var(--accent-color);
   padding: 12px 24px;
@@ -283,6 +283,7 @@ img {
 .filter-button:active {
   background-color: var(--active-state-color);
   color: var(--bright-background-color);
+  box-shadow: 0px 4px 4px var(--box-shadow-color);
 }
 
 .portfolio-projects-container {
