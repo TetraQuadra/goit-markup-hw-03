@@ -98,7 +98,6 @@ img {
   color: var(--primary-brand-color);
 }
 .logo-span-studio {
-  color: var(--light-accent-color);
 }
 .navigation {
   display: flex;
@@ -158,6 +157,7 @@ img {
   font-size: 56px;
   line-height: 1.07;
   color: var(--bright-background-color);
+  margin-bottom: 48px;
 }
 .hero-button {
   font-family: inherit;
@@ -171,7 +171,6 @@ img {
   box-shadow: 0px 4px 4px var(--box-shadow-color);
   border-radius: 4px;
   border: 0;
-  margin-top: 48px;
   display: inline-block;
   padding: 16px 32px;
 }
@@ -323,16 +322,8 @@ img {
   background-color: var(--hero-background-color);
 }
 .footer-logo {
-  font-family: "Raleway";
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.5;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--headings-color);
+  color: var(--light-accent-color);
   margin-bottom: 16px;
-  text-decoration: none;
-  display: block;
 }
 
 .footer-motto {
