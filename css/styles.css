@@ -264,13 +264,7 @@ img {
   list-style-type: none;
   display: flex;
   justify-content: center;
-}
-.filter-buttons-list-item {
-  margin-right: 24px;
-}
-
-.filter-buttons-list-item:last-child {
-  margin-right: 0;
+  gap: 24px;
 }
 
 .filter-button:hover,
