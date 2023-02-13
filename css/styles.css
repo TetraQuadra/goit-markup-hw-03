@@ -194,7 +194,7 @@ img {
   justify-content: space-between;
 }
 .features-list-item {
-  flex-basis: calc((100% - 24px * 4) / 4);
+  flex-basis: calc((100% - 24px * 3) / 4);
 }
 
 .projects-list {
@@ -202,7 +202,7 @@ img {
   justify-content: space-between;
   display: flex;
 }
-.examples .container {
+.examples {
   padding-bottom: 120px;
 }
 .examples .secondary-title {
